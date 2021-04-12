@@ -18,6 +18,9 @@ class SlingShot{
         this.sling.bodyA = null;
     }
 
+    attach(body) {
+        this.sling.bodyA = body
+    }
     display(){
         image(this.sling1,200,40,40,180)
         image(this.sling2,172,45,40,100)
@@ -35,6 +38,8 @@ class SlingShot{
             line(pointA.x-20, pointA.y, pointB.x+30, pointB.y+10);
             image(this.sling3,pointA.x-25,pointA.y-10,7,20)
         }
+
     }
+
     
 }
